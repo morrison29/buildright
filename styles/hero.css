@@ -1,0 +1,67 @@
+h2{
+    color: var(--black);
+    font-size: 2rem;
+}
+.yellow-h1{
+    color: var(--orange);
+
+}
+p{
+    color: var(--light-orange);
+}
+
+.btn-container button{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+.btn-container :nth-child(2){
+    background-color: transparent;
+    color: var(--black);
+    border: 2px solid var(--black);
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.black-div{
+    background-color: var(--black);
+    color: white;
+    width: fit-content;
+    padding: 8px 25px;
+}
+.hero{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.hero>div{
+    width: 100%;
+}
+.left>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right{
+    position: relative;
+}
+.right img{
+    width: 100%;
+    
+}
+.img-div{
+    color: white;
+    background-color: var(--orange);
+    width: fit-content;
+    padding: 20px 15px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 0%;
+    box-shadow: 4px 4px 0px #2F3131 ;
+}
