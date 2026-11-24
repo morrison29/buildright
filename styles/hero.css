@@ -1,6 +1,7 @@
 h2{
     color: var(--black);
     font-size: 2rem;
+    font-family: var(--inter-font);
 }
 .yellow-h1{
     color: var(--orange);
@@ -8,6 +9,7 @@ h2{
 }
 p{
     color: var(--light-orange);
+    font-family: var(--inter-font);
 }
 
 .btn-container button{
@@ -34,10 +36,12 @@ p{
     padding: 8px 25px;
 }
 .hero{
-    font-family: "Inter", sans-serif;
+    font-family: var(--inter-font);
     display: flex;
     flex-direction: column;
     gap:30px;
+    border-bottom: 4px solid var(--black);
+    padding: 40px 10px;
 }
 
 .hero>div{
@@ -65,4 +69,36 @@ p{
     bottom: -4px;
     left: -7px;
     box-shadow: 4px 4px 0px #2F3131 ;
+}
+@media(min-width:768px){
+    .hero{
+        flex-direction: row;
+    }
+    .hero>div{
+        width: 50%;
+    }
+    .hero img{
+        height: 100%;
+    }
+    .img-div{
+        width: 30%;
+        
+    }
+}
+@media(min-width:1024px){
+    .hero{
+        align-items: center;
+    }
+    .btn-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    h2{
+        font-size: 3rem;
+        width: 60%;
+    }
+    .left p{
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
 }

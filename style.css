@@ -10,7 +10,5 @@
     --black: #1A1C1C;
     --orange: #964900;
     --light-orange: #574235;
-}
-main{
-    margin: 20px;
+    --inter-font: "Inter", sans-serif;
 }
