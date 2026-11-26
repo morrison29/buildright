@@ -1,5 +1,7 @@
 @import url(./styles/header.css);
 @import url(./styles/hero.css);
+@import url(./styles/expertise.css);
+@import url(./styles/recent-projects.css);
 *{
     margin: 0;
     padding: 0;
@@ -11,4 +13,6 @@
     --orange: #964900;
     --light-orange: #574235;
     --inter-font: "Inter", sans-serif;
+    --article-header-color: #2F3131;
+    --line-color: #DEC1AF;
 }

@@ -1,0 +1,15 @@
+.article-header{
+    background-color: var(--article-header-color);
+    width:100%;
+}
+
+.expertise article{
+    width: 378px;  
+    height: 333px;
+    background-color: #F3F3F3;
+    border: 1px solid #DEC1AF;
+}
+.article-title{
+    font-family: var(--inter);
+    
+}
