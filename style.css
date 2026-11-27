@@ -16,4 +16,8 @@
     --article-header-color: #2F3131;
     --line-color: #DEC1AF;
     --white: #FFFFFF;
+    
+}
+body{
+    font-family: var(--inter-font);
 }

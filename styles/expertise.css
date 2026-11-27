@@ -1,61 +1,112 @@
-.article-header{
+
+.expertise {
+    padding: 20px;
+    font-family: var(--inter);
+}
+
+.article-header {
     background-color: var(--article-header-color);
-    width:100%;
+    width: 100%;
     height: fit-content;
     color: var(--white);
     font-size: 1rem;
     padding: 10px;
 }
-.expertise h3{
-    font-family: var(--inter);
 
+.expertise h2 {
+    position: relative;
+    font-size: 1.5rem;
+    
 }
-.expertise-title{
+.expertise h2::after{
+    content: "";
+    display: block;
+    border-bottom: 10px solid var(--orange) ;
+    width: 30%
+}
+.expertise-title {
     display: flex;
-    align-items: center;
+
+    flex-direction: column;
 }
-.expertise article{
+
+.expertise-title p {
+    padding: 30px 0px;
+}
+
+.expertise article {
     background-color: #F3F3F3;
     border: 2px solid var(--line-color);
 }
-.icon{
+
+.icon {
     padding: 0px 20px;
 }
- .article-ctn{
+
+.article-ctn {
     display: flex;
     flex-direction: column;
-    gap:20px;
- }
-.article-title{
+    gap: 20px;
+}
+
+.article-title {
     font-family: var(--inter);
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--black);
     padding: 0px 20px;
 }
-.article-description{
+
+.article-description {
     font-family: var(--inter);
     font-size: 1rem;
     color: var(--light-orange);
     padding-bottom: 50px;
     padding-left: 20px;
 }
-.learn-more-div{
+
+.learn-more-div {
     width: 100%;
     border-top: 1px solid var(--line-color);
     padding: 20px 20px;
-    color: var(--white);
+    color: var(--inter);
     font-family: var(--inter);
-}   
-.articles-div{
+}
+
+.learn-more-div a {
+    text-decoration: none;
+    color: var(--inter);
+}
+
+.articles-div {
     display: flex;
+    flex-direction: column;
     gap: 25px;
 }
-@media(min-width:1024px){
-    .expertise{
+
+@media(min-width:1024px) {
+    .expertise {
         padding: 50px;
     }
-    .expertise h3{
+
+    .expertise h2 {
         font-size: 2rem;
     }
+
+    .expertise-title {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .articles-div {
+        flex-direction: row;
+    }
+    .expertise h2::after{
+        content: "";
+        display: block;
+        border-bottom: 10px solid var(--orange) ;
+        width: 10%
+    }
+
 }
